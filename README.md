@@ -1,4 +1,4 @@
-# Deep Learning for Remote Sensing Scene Classification
+# Chest X-ray Classification Using Deep Neural Network
 
 This work aims to detect Tuberculosis in Lungs using X-ray .
 
