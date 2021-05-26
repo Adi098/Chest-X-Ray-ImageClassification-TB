@@ -7,6 +7,127 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+#counter-area {
+  padding: 140px 0;
+  background: #1E1F26;
+}
+#counter-area.counter-area-two {
+  background: #F6F7FA;
+}
+#counter-area.counter-area-four {
+  background: #0A0A0A;
+}
+#counter-area.counter-area-five {
+  background: #130F22;
+}
+.single-counter {
+  text-align: center;
+  font-size: 84px;
+}
+.single-counter h1 {
+  font-size: 84px;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  display: inline;
+}
+.single-counter span {
+  float: right;
+}
+.counter-area-two .single-counter h1 {
+  color: #0D0B50;
+}
+.single-counter span {
+  font-size: 28px;
+  line-height: 42px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 40px;
+  display: inline-block;
+  position: relative;
+}
+.counter-area-two .single-counter span {
+  color: #0D0B50;
+}
+.single-counter span:before {
+  content: "";
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  width: 30px;
+  height: 25px;
+  background: #EFC778;
+}
+.counter-area-two .single-counter span:before {
+  background: #F7EA00;
+}
+.counter-area-three .single-counter span:before {
+  background: #F7EA00;
+}
+.counter-area-four .single-counter span:before {
+  background: #F24848;
+}
+.counter-area-five .single-counter span:before {
+  background: #F7EA00;
+}
+.single-counter span:after {
+  content: "";
+  font-family: "Ionicons";
+  font-size: 183px;
+  line-height: 1;
+  color: rgba(242, 92, 92, 0.5);
+  bottom: -60px;
+  right: -75px;
+  position: absolute;
+  z-index: 0;
+}
+.counter-area-two .single-counter span:after {
+  color: rgba(247, 234, 0, 0.35);
+}
+.counter-area-three .single-counter span:after {
+  color: rgba(247, 234, 0, 0.35);
+}
+.counter-area-four .single-counter span:after {
+  color: rgba(242, 72, 72, 0.35);
+}
+.counter-area-five .single-counter span:after {
+  color: rgba(247, 234, 0, 0.35);
+}
+.single-counter span.counter-text-one:after {
+  content: "\f3ed";
+}
+.single-counter span.counter-text-two:after {
+  content: "\f47f";
+}
+.single-counter span.counter-text-three:after {
+  content: "\f3c9";
+}
+
+
+
+
+
+
+
+
+
+
 /* Box Model */
 
 	*, *:before, *:after {
