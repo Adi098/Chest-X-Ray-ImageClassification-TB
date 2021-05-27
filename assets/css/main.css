@@ -955,6 +955,7 @@ nav.black {
   font-family: "Monoton";
   font-weight: normal;
   font-size: 2.5rem;
+  color: #f7ea00 !important;
 }
 .navbar-nav {
   font-family: "Days One";
@@ -1193,9 +1194,12 @@ nav.black {
   color: #000;
 }
 
+.btn-bg:hover {
+  transition: 0.5s;
+}
+
 .btn-hover:hover {
   transition: 0.5s;
-  background-color: #f7ea00;
 }
 
 /* Info */
@@ -1208,8 +1212,6 @@ nav.black {
 .jumbotron .container {
   position: relative;
   z-index: 2;
-
-  background: rgba(0, 0, 0, 0.2);
   padding: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
@@ -1224,11 +1226,20 @@ nav.black {
   background-image: url("../../images/banner.jpg");
   width: 100%;
   height: 30%;
-  opacity: 0.5;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.jumbotron-background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 15, 34, 0.8);
 }
 
 img.blur {
