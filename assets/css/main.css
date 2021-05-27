@@ -940,6 +940,15 @@ header h6 + p {
 
 /* Nav */
 
+nav ul {
+  overflow: hidden;
+  transition: 1s;
+}
+
+nav.black {
+  background: rgba(19, 15, 34, 1);
+}
+
 .navbar-brand {
   padding-left: 3rem;
   /* margin-right: 20rem !important; */
@@ -1174,6 +1183,7 @@ header h6 + p {
 }
 
 .b-button {
+  position: absolute;
   text-align: left;
   z-index: 7;
 }
@@ -1181,6 +1191,11 @@ header h6 + p {
 .btn-bg {
   background-color: #f7ea00;
   color: #000;
+}
+
+.btn-hover:hover {
+  transition: 0.5s;
+  background-color: #f7ea00;
 }
 
 /* Info */
