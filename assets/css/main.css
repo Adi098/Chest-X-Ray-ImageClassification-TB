@@ -3,6 +3,10 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
 @import url("https://fonts.googleapis.com/css?family=Droid+Sans+Mono");
 
+a {
+  color: #fff !important;
+}
+
 .header-bottom {
   display: flex;
   align-items: center;
@@ -1251,14 +1255,14 @@ img.blur {
 /* Card */
 
 body .spcl-bg {
-  background: linear-gradient(to bottom, #000428, #004683);
+  background: linear-gradient(to bottom, #131020, #2a3e4f);
   animation: background-color 20s;
   min-height: 80vh;
   min-width: 100%;
   background-size: cover;
 }
 
-@keyframes background-color {
+/* @keyframes background-color {
   0% {
     background: linear-gradient(to bottom, #000428, #004683);
   }
@@ -1274,7 +1278,7 @@ body .spcl-bg {
   100% {
     background: linear-gradient(-135deg, #fae37d, #881da8, #20668f);
   }
-}
+} */
 
 #container.container {
   margin-top: 80px;
@@ -1389,6 +1393,10 @@ body .spcl-bg {
 }
 
 /* Footer */
+
+#footer {
+  background-color: rgba(19, 15, 34, 1);
+}
 
 #footer .inner {
   border-top: 1px solid #dbdbdb;
