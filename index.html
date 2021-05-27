@@ -59,7 +59,7 @@
 	</nav>
 	
 
-	<div  id="particles-js" style="width:100%;height:100vh;z-index:6;position:absolute;"></div>
+	<div id="particles-js"></div>
 	
 	
 <header >
@@ -70,11 +70,21 @@
 	
 	<section  class="parallax banner">
 			<div class="text">
-			<h1>
-				<a href="" class="typewrite" data-period="2000" data-type='[ "Normal.", "Tuberculosis."]'>
-				<span class="wrap"></span>
-				</a>
-			</h1>
+				<h3>
+					X-Ray Classification
+				</h3>
+				<h1>
+					<div class="typewrite" data-period="2000" data-type='[ "Normal.", "Tuberculosis."]'>
+					<span class="wrap"></span>
+				</h1>
+				<h3 class="b-content">
+					Chest X-Ray image classification using <br>
+					Deep Neural Network.
+				</h3>
+				<div class="b-button">
+					<button type="button" class="btn btn-outline-light btn-lg btn-hover"> DEMO </button>	
+					<button type="button" class="btn btn-outline-light btn-lg btn-bg"><i class="fas fa-sitemap"></i> CLASSIFY <i class="fas fa-sitemap"></i></button>
+				</div>
 			
 			</div>
 			
@@ -144,49 +154,49 @@
 	    <div class="row">
 	        <div class="col-lg-3 col-md-6">
 	            <div class="card">
-	                <div class="face front-face"> <img src="" alt="" class="profile">
-	                    <div class="pt-3 text-uppercase name"> Jith </div>
-	                    <div class="designation">Creator</div>
-	                </div>
-	                <div class="face back-face">
-										<i class="fab fa-github fa-3x"></i>
-										<i class="fab fa-linkedin fa-3x"></i>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col-lg-3 col-md-6">
-	            <div class="card">
-	                <div class="face front-face"> <img src="" alt="" class="profile">
+	                <div class="face front-face"> <img src="./images/aditya.jpg" alt="" class="profile">
 	                    <div class="pt-3 text-uppercase name"> Aditya Nair </div>
 	                    <div class="designation">Full Stack Developer</div>
 	                </div>
 	                <div class="face back-face">
-										<i class="fab fa-github fa-3x"></i>
-										<i class="fab fa-linkedin fa-3x"></i>
+						<a href="https://github.com/Adi098"><i class="fab fa-github fa-3x"></i></a>
+						<a href="https://www.linkedin.com/in/aditya-nair-8259a6148/"><i class="fab fa-linkedin fa-3x"></i></a>
+	                </div>
+	            </div>
+	        </div>
+			<div class="col-lg-3 col-md-6">
+	            <div class="card">
+	                <div class="face front-face"> <img src="./images/jith.jpg" alt="jith image" class="profile">
+	                    <div class="pt-3 text-uppercase name"> Jith James Fernandez </div>
+	                    <div class="designation">Creator</div>
+	                </div>
+	                <div class="face back-face">
+						<a href="https://github.com/jith4j"><i class="fab fa-github fa-3x"></i></a>
+						<a href="https://www.linkedin.com/in/jith4j"><i class="fab fa-linkedin fa-3x"></i></a>
 	                </div>
 	            </div>
 	        </div>
 	        <div class="col-lg-3 col-md-6">
 	            <div class="card">
-	                <div class="face front-face"> <img src="" alt="" class="profile">
+	                <div class="face front-face"> <img src="./images/akshay.jpg" alt="" class="profile">
 	                    <div class="pt-3 text-uppercase name"> Akshay Mohan </div>
 	                    <div class="designation">Co-Creator</div>
 	                </div>
 	                <div class="face back-face">
-										<i class="fab fa-github fa-3x"></i>
-										<i class="fab fa-linkedin fa-3x"></i>
+						<a href="https://github.com/KichuMohan"><i class="fab fa-github fa-3x"></i></a>
+						<a href="https://www.linkedin.com/in/akshay-mohan-9a97a3148/"><i class="fab fa-linkedin fa-3x"></i></a>
 	                </div>
 	            </div>
 	        </div>
 					<div class="col-lg-3 col-md-6">
 	            <div class="card">
-	                <div class="face front-face"> <img src="" alt="" class="profile">
+	                <div class="face front-face"> <img src="./images/sabin.jpg" alt="" class="profile">
 	                    <div class="pt-3 text-uppercase name"> Sabin Biju </div>
 	                    <div class="designation">Co-Creator</div>
 	                </div>
 	                <div class="face back-face">
-										<i class="fab fa-github fa-3x"></i>
-										<i class="fab fa-linkedin fa-3x"></i>
+						<a href="https://github.com/sbxin"><i class="fab fa-github fa-3x"></i></a>
+						<a href="https://www.linkedin.com/in/sabin-biju-1526b7160/"><i class="fab fa-linkedin fa-3x"></i></a>
 	                </div>
 	            </div>
 	        </div>
@@ -255,7 +265,7 @@
 	</section> -->
 
 	<!-- Three -->
-	<section id="three" class="wrapper special parallax">
+	<section id="three" class="wrapper special parallax work">
 		<div class="inner">
 			<header class="align-center">
 				<h2 class="color1"><u>Work place</u></h2>
@@ -282,11 +292,6 @@
 						.<br>
 				</article>
 
-				<article>
-					<div class="image fit">
-						<img src="images/dept-image.png" alt="Pic 02" />
-					</div>
-				</article>
 			</div>
 
 		</div>
@@ -298,7 +303,7 @@
 			<div class="flex">
 				<div class="copyright">
 
-					&copy; AJAS | HTML template: <a href="https://templated.co">Templated.co</a> | Images: <a href="https://unsplash.com">Unsplash</a>.
+					AJAS &copy; <span id="year"></span>
 				</div>
 			</div>
 		</div>
@@ -323,8 +328,23 @@
     });
     </script>
 	
+	<!-- Navbar scroll -->
+	<script>
+		$(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+	</script>
 	
-	
+	<!-- Year -->
+	<script>
+		document.getElementById("year").innerHTML = new Date().getFullYear();
+	</script>
 	
 	<script src="./assets/js/jquery.counterup.min.js"></script>
     <script src="./assets/js/waypoints-2.0.3.min.js"></script>
