@@ -365,9 +365,7 @@ a {
   z-index: 1;
   display: inline;
 }
-.single-counter span {
-  float: right;
-}
+
 .counter-area-two .single-counter h1 {
   color: #0d0b50;
 }
@@ -429,13 +427,16 @@ a {
   color: rgba(247, 234, 0, 0.35);
 }
 .single-counter span.counter-text-one:after {
-  content: "\f3ed";
+  content: "\1F5B3";
+  font-size: 80px;
 }
 .single-counter span.counter-text-two:after {
-  content: "\f47f";
+  content: "\1F5A5";
+  font-size: 80px;
 }
 .single-counter span.counter-text-three:after {
-  content: "\f3c9";
+  content: "\1F5AB";
+  font-size: 80px;
 }
 
 /* Box Model */
@@ -462,6 +463,16 @@ body {
   html,
   body {
     min-width: 320px;
+  }
+
+  .single-counter span.counter-text-one:after {
+    content: "";
+  }
+  .single-counter span.counter-text-two:after {
+    content: "";
+  }
+  .single-counter span.counter-text-three:after {
+    content: "";
   }
 }
 
@@ -1129,6 +1140,7 @@ nav.black {
   font-weight: bold;
   text-shadow: 1px 1px #000;
   text-align: left;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .banner h3 {
@@ -1161,19 +1173,43 @@ nav.black {
   .banner {
     background-attachment: scroll;
   }
+
+  .text {
+    padding-left: 4%;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f7ea00;
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    padding-top: 8vh;
+    font-weight: bold;
+    text-shadow: 1px 1px #000;
+    text-align: left;
+  }
+
+  .banner h3 {
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px #000;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .banner p {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 1.75em;
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 736px) {
   .banner {
     padding: 8em 1.5em 6em 1.5em;
-  }
-
-  .banner h1 {
-    font-size: 3.5em;
-  }
-
-  .banner p {
-    font-size: 0.9em;
   }
 }
 
@@ -1204,6 +1240,12 @@ nav.black {
 
 .btn-hover:hover {
   transition: 0.5s;
+}
+
+@media screen and (max-width: 980px) {
+  .btn-hover {
+    display: block;
+  }
 }
 
 /* Info */
