@@ -570,8 +570,11 @@ i {
 }
 
 p {
+  font-size:21px!important;
+  font-weight:bold!important;
   margin: 0 0 2em 0;
-  color: black;
+  color: white;
+  
 }
 
 h1,
@@ -969,7 +972,7 @@ nav.black {
   /* margin-right: 20rem !important; */
   font-family: "Monoton";
   font-weight: normal;
-  font-size: 2.5rem;
+  font-size: 2.5rem!important;
   color: #f7ea00 !important;
 }
 .navbar-nav {
@@ -1498,14 +1501,17 @@ body .spcl-bg {
 
 /* Footer */
 
+
+
 /* Classifier page */
 
 
 
 
 .classify_body {
-  padding: 6em 0 10em 0;
+  padding: 9em 0 10em 0;
   background-image: url("../../images/banner.jpg");
+  width:100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -1523,20 +1529,17 @@ body .spcl-bg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(19, 15, 34, 0.8);
+  background: rgba(19, 15, 34, 0.95);
 }
 
 
 .classify {
 	z-index:10;
 	position:absolute;
-	margin-left:25%;
+	margin-left:31%;
 	width: 600px;
 	
 	
-}
-.labb {
-	width:600px!important;
 }
 
 
@@ -1545,7 +1548,7 @@ body .spcl-bg {
 
 
 .file-upload {
-  width: 600px;
+  width: 500px;
   padding: 20px;
 }
 
@@ -1654,6 +1657,11 @@ body .spcl-bg {
   transition: all 0.2s ease;
 }
 
+/**/
+
+
+
+
 
 /* Classifier page toggle scan*/
 
@@ -1664,11 +1672,11 @@ body .spcl-bg {
 
 
 
-
-
-
-
-
+.clas_1 {
+	background-color:rgba(0,0,0,0.4);
+	border: 6px solid white;
+	border-radius: 25px;
+}
 
 
 
@@ -1677,7 +1685,6 @@ body .spcl-bg {
 
 
 .fingerprint {
- 
   width: 58px;
   height: 58px;
  
@@ -1686,7 +1693,7 @@ body .spcl-bg {
 .fingerprint.scanning::after {
   content: '';
   position: absolute;
-  width: 508px;
+  width: 400px;
   height: 8px;
   background-image: linear-gradient(to bottom,
     rgba(170, 184, 190, 0),
