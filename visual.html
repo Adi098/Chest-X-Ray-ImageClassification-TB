@@ -24,6 +24,9 @@
 									<div class="row">
 										<h6>Physician : Artificial Intelligence</h6>	
 									</div>
+									<div class="row">
+										<h6>Date : <span id="date"></span>/<span id="month"></span>/<span id="year"></span></h6>	
+									</div>
 							  </div>
 							  
 							</div>
@@ -57,13 +60,6 @@
 									  95% 
 									</div>
 				</div>
-				
-
-				
-
-				
-		
-		
 		</div>
 		
 		<br>
@@ -72,7 +68,7 @@
 				 The content on this website is for information only.
 				 It is not intended to provide medical, legal, or any 
 				 other professional advice. No individuals should use the information
-				 resources or tools contained within to slef-diagonsis or self-treat
+				 resources or tools contained within to self-diagonsis or self-treat
 				 any health condition.
 		</p>
 		
@@ -80,5 +76,12 @@
 		<p class="page">Page 1 of 1</p>
 		<button class="bt" onclick="window.print()">Print this page</button>
 		</section>
+
+		<script>
+			document.getElementById("date").innerHTML = new Date().getDate();
+			document.getElementById("month").innerHTML = new Date().getMonth()+1;
+			document.getElementById("year").innerHTML = new Date().getFullYear();
+
+		</script>
 	</body>
 </html>

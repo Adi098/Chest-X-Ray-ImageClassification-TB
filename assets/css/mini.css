@@ -1,61 +1,49 @@
-
-
-
-.mid{
-	
-	padding-top:70px;
-	width:50%;
-	margin:0 auto;
+.mid {
+  padding-top: 70px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .head_1 {
-	display: grid;
-	grid-template-columns: auto auto auto;
-  
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
-.sub{
-	
-	text-align:right;
-	
-	
+.sub {
+  text-align: right;
 }
-.sub h6{
-	font-weight:300;
-	font-size:12pt;
+.sub h6 {
+  font-weight: 300;
+  font-size: 12pt;
 }
 
-.logo{
-	font-family:Monoton;
-	font-size:xxx-large;
-	font-weight:600;
-	
+.logo {
+  font-family: Monoton;
+  font-size: xxx-large;
+  font-weight: 600;
 }
 
-.H{
-	text-align:left;
+.H {
+  text-align: left;
 }
-.A{
-	text-align:right;
+.A {
+  text-align: right;
 }
-.row{
-	padding-bottom:10px;
-	
-}
-
-p{
-	padding:6px;
-	padding-top:10px;
-}
-.page{
-	margin-top:20%;
-	font-size:7pt;
-	text-align:right;
+.row {
+  padding-bottom: 10px;
 }
 
-.bt{
-	margin-top:5%;
+p {
+  padding: 6px;
+  padding-top: 10px;
+}
+.page {
+  margin-top: 5%;
+  font-size: 7pt;
+  text-align: right;
 }
 
 @media print {
-    hr { display:block; }
+  hr {
+    display: block;
+  }
 }
