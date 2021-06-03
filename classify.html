@@ -13,7 +13,7 @@
     <title>Classifier</title>
   </head>
   <body class="classify_body">
-  
+
 		<nav class="navbar navbar-expand-sm fixed-top navbar-dark scrolling-navbar">
 		<a class="navbar-brand" href="#">AJAS</a>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,9 +30,9 @@
 			</ul>
 		</div>
 	</nav>
-	
-	
-	
+
+
+
   <section class="classify">
       <h1>
         X-Ray Classification
@@ -46,14 +46,14 @@
       <p>
         Upload X-Ray Image
       </p>
-	  
-	
+
+
 
 
 
 
  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
- 
+
  <form action="http://127.0.0.1/home" class="inline" enctype = "multipart/form-data" method="POST">
 
       <div class="file-upload">
@@ -65,7 +65,7 @@
       <h3>Drag and drop a file or select add Image</h3>
     </div>
   </div>
- 
+
   <div class="file-upload-content">
    <div id="fd" class="fingerprint scanning "></div>
     <img class="file-upload-image" src="#" alt="your image" />
@@ -82,16 +82,16 @@
 
 
       <script src="assets/js/app.js"></script>
-	  
-	  
-	  
+
+
+
   </body>
-  
+
   <script>
   function myFunction(){
    $("div").removeClass('scanning');
 }
-  
+
 $('button').on('click', function () {
   $('#fd').addClass('scanning');
 });

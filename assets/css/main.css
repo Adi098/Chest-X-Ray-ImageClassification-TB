@@ -1532,8 +1532,8 @@ body .spcl-bg {
 	position:absolute;
 	margin-left:25%;
 	width: 600px;
-	
-	
+
+
 }
 .labb {
 	width:600px!important;
@@ -1677,10 +1677,10 @@ body .spcl-bg {
 
 
 .fingerprint {
- 
+
   width: 58px;
   height: 58px;
- 
+
 }
 
 .fingerprint.scanning::after {
