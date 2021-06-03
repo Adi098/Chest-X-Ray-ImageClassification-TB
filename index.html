@@ -26,6 +26,8 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -143,7 +145,7 @@
 	<div id="container" class="container spcl-bg">
 		<div class="row">
 			<div class="col-lg-3 col-md-6">
-				<div class="card">
+				<div class="card" data-aos="flip-left" data-aos-duration="1500">
 					<div class="face front-face"> <img src="./images/aditya.jpg" alt="" class="profile">
 						<div class="pt-3 text-uppercase name"> Aditya Nair </div>
 						<div class="designation">Full Stack Developer</div>
@@ -155,7 +157,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
-				<div class="card">
+				<div class="card" data-aos="flip-up" data-aos-duration="1500">
 					<div class="face front-face"> <img src="./images/jith.jpg" alt="jith image" class="profile">
 						<div class="pt-3 text-uppercase name"> Jith James Fernandez </div>
 						<div class="designation">Creator</div>
@@ -167,7 +169,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
-				<div class="card">
+				<div class="card" data-aos="flip-up" data-aos-duration="1500">
 					<div class="face front-face"> <img src="./images/akshay.jpg" alt="" class="profile">
 						<div class="pt-3 text-uppercase name"> Akshay Mohan </div>
 						<div class="designation">Co-Creator</div>
@@ -179,7 +181,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
-				<div class="card">
+				<div class="card" data-aos="flip-right" data-aos-duration="1500">
 					<div class="face front-face"> <img src="./images/sabin.jpg" alt="" class="profile">
 						<div class="pt-3 text-uppercase name"> Sabin Biju </div>
 						<div class="designation">Co-Creator</div>
@@ -197,13 +199,13 @@
 	<!-- Three -->
 	<section id="three" class="wrapper special parallax work">
 		<div class="inner">
-			<header class="align-center">
+			<header class="align-center" data-aos="zoom-out">
 				<h2 class="color1" style="color:#867ae9;font-size:5rem"><u>Work Place</u></h2>
 
 			</header>
 			<div class="flex flex-2">
 
-				<article class="color2">
+				<article class="color2" data-aos="fade-up-right">
 
 					<img src="images/logo_dark_new.png" alt="Pic 02" />
 
@@ -215,8 +217,8 @@
 						Kazhakuttom, Thiruvananthapuram - 695582 <br> mail@marian.ac.in</br>
 					</p>
 				</article>
-					<hr>
-				<article class="color2">
+					<hr data-aos="fade-up">
+				<article class="color2" data-aos="fade-up-left">
 					<img src="images/sreena.jpg" width="100" height="135" alt="Pic 02" />
 					</br></br>
 
@@ -253,6 +255,7 @@
 	<script src="assets/js/jquery.counterup.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 	<script src="jquery.counterup.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		// counterup call
 		$('.counter').counterUp({
@@ -281,6 +284,11 @@
 	<script src="./assets/js/waypoints-2.0.3.min.js"></script>
 	<script src="assets/js/animate-headline.js"></script>
 
+	<!-- Initialize AOS -->
+
+	<script>
+  	AOS.init();
+	</script>
 
 </body>
 
