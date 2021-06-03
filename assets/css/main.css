@@ -11,7 +11,9 @@ button a {
   color: #000 !important;
   text-decoration: none;
 }
-
+.glow{
+text-shadow : 1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
 .header-bottom {
   display: flex;
   align-items: center;
@@ -632,25 +634,41 @@ h2 {
 /* Section/Article */
 
 #three {
-  background-image: url("../../images/banner.jpg");
+  background: url("../../images/banner.jpg") rgba(19, 15, 34, 0.8);
   height: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .color1 {
-  font-family: "Montserrat";
+  font-family: "Courier New", Courier, monospace;
   color: #ffffc7;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .color2 {
   font-family: "Lato";
   font-size: 1.5rem;
 }
+#three hr{
+
+    margin-right: 3.5rem;
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         30vh;
+    width:          2px;
+}
+
+@media screen and (max-width: 1072px){
+    #three hr{
+        display: none;
+    }
+}
+
 b.color2 {
   font-family: "Lato";
   font-weight: bold;
@@ -1522,7 +1540,7 @@ body .spcl-bg {
 
 .classify_body:before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1532,14 +1550,15 @@ body .spcl-bg {
 
 .classify {
   z-index: 10;
-  position: absolute;
-  margin-left: 31%;
+  position: relative;
+  margin: auto;
   width: 600px;
 }
 
 .file-upload {
   width: 500px;
   padding: 20px;
+  padding-left: 14px;
 }
 
 .file-upload-btn {
@@ -1648,22 +1667,31 @@ body .spcl-bg {
 .clas_2 {
   padding: 50px;
 }
-
+.adjust{
+  padding: 50px;
+}
 @media screen and (max-width: 980px) {
   .classify {
     z-index: 10;
-    position: absolute;
-    margin-left: 1%;
-    width: 100%;
+    position: relative;
+    margin: auto;
   }
 
   .file-upload {
-    width: 320px;
+    width: 300px;
     padding: 0px;
   }
 
   .clas_2 {
     padding: 20px;
+  }
+
+  .form{
+    width:300px;
+    margin: auto;
+  }
+  .adjust{
+    padding: 25px;
   }
 }
 
