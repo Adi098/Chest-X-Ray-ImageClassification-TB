@@ -11,6 +11,15 @@ button a {
   color: #000 !important;
   text-decoration: none;
 }
+
+.btn-hover a {
+  color: #fff !important;
+}
+
+.btn-hover a:hover {
+  color: #000 !important;
+}
+
 .glow {
   text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
 }
